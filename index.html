@@ -18,22 +18,10 @@ html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-weight:300;font-size:17px;line-height:1.85;overflow-x:hidden;}
 
 
-/* NARRATIVE ANALYSIS BLOCKS */
-.analysis-wrap{max-width:1040px;margin:0 auto 3rem;}
-.analysis-block{border-left:2px solid rgba(200,148,58,.3);padding:1.8rem 2rem;margin-bottom:1.5rem;background:rgba(255,255,255,.02);}
-.analysis-block.contradiction{border-left-color:var(--crimson);background:rgba(110,26,26,.08);}
-.analysis-label{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.28em;color:var(--gold);text-transform:uppercase;display:block;margin-bottom:.7rem;}
-.analysis-block.contradiction .analysis-label{color:#c0524a;}
-.analysis-title{font-family:'Cinzel',serif;font-size:1.1rem;color:var(--paper);margin-bottom:.9rem;}
-.analysis-body{font-size:.92rem;color:var(--text);line-height:1.75;}
-.analysis-body p{margin-bottom:.8rem;}
-.analysis-body p:last-child{margin-bottom:0;}
-.analysis-quote{border-left:2px solid rgba(200,148,58,.25);padding:.6rem 1rem;margin:.9rem 0;font-style:italic;color:var(--muted);font-size:.88rem;line-height:1.6;}
-.analysis-block.contradiction .analysis-quote{border-left-color:rgba(192,82,74,.4);color:#b08080;}
 
 /* TIKTOK VOICES SECTION */
 .tiktok-section{padding:5rem 2rem 6rem;background:var(--bg2);border-top:1px solid rgba(200,148,58,.08);border-bottom:1px solid rgba(200,148,58,.08);}
-.tiktok-header{max-width:860px;margin:0 auto 3.5rem;}
+
 .tiktok-intro{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--muted);max-width:700px;margin-top:1rem;}
 .tiktok-grid{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
 @media(max-width:650px){.tiktok-grid{grid-template-columns:1fr;}}
@@ -128,6 +116,19 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
 .caric-source-link a{color:var(--gold);text-decoration:none;}
 
 
+/* BIBLIOGRAFIA */
+.biblio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem;max-width:1040px;margin:0 auto;}
+.biblio-group{}
+.biblio-group-title{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid rgba(200,148,58,.2);padding-bottom:.6rem;margin-bottom:1.2rem;}
+.biblio-item{margin-bottom:1rem;padding-left:1rem;border-left:1px solid rgba(200,148,58,.12);}
+.biblio-item:last-child{margin-bottom:0;}
+.biblio-author{font-family:'Cinzel',serif;font-size:.68rem;color:var(--paper);letter-spacing:.04em;}
+.biblio-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.92rem;color:var(--text);display:block;margin:.15rem 0;}
+.biblio-meta{font-size:.75rem;color:var(--muted);}
+.biblio-link{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.1em;color:var(--gold);text-decoration:none;text-transform:uppercase;display:inline-block;margin-top:.3rem;}
+.biblio-link:hover{color:var(--paper);}
+@media(max-width:720px){.biblio-grid{grid-template-columns:1fr;}}
+
 /* CLOSING */
 .closing{text-align:center;padding:5rem 2rem 8rem;}
 .h-rule{width:50px;height:1px;background:var(--gold);margin:2rem auto;opacity:.4;}
@@ -149,33 +150,12 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
 
 
 
-/* FONTI DUEL — camp labels & clash table */
+/* FONTI DUEL — camp labels */
 .camp-label{display:block;font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;padding:.55rem 1rem;margin:-2.5rem -2.5rem 1.6rem;border-bottom:1px solid;}
 .camp-ris .camp-label{background:rgba(200,148,58,.07);color:var(--gold);border-color:rgba(200,148,58,.2);border-top:3px solid var(--gold);}
 .camp-leg .camp-label{background:rgba(110,26,26,.12);color:#c0524a;border-color:rgba(110,26,26,.28);border-top:3px solid var(--crimson);}
 .camp-ris{border-color:rgba(200,148,58,.32)!important;}
 .camp-leg{border-color:rgba(110,26,26,.35)!important;}
-
-.clash-wrap{max-width:1040px;margin:2.8rem auto 0;}
-.clash-kicker{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;text-align:center;display:block;margin-bottom:1.2rem;}
-.clash-table{width:100%;border-collapse:collapse;}
-.clash-table thead tr{border-bottom:1px solid rgba(200,148,58,.18);}
-.clash-table th{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;padding:.7rem 1.2rem .7rem;}
-.th-ris{color:var(--gold);text-align:left;width:38%;}
-.th-dim{color:var(--muted);text-align:center;width:18%;font-size:.54rem;letter-spacing:.1em;}
-.th-leg{color:#c0524a;text-align:left;width:38%;}
-.clash-table td{padding:.9rem 1.2rem;font-size:.82rem;line-height:1.65;color:var(--text);vertical-align:top;border-bottom:1px solid rgba(200,148,58,.06);}
-.td-ris{background:rgba(200,148,58,.025);}
-.td-leg{background:rgba(110,26,26,.04);}
-.td-dim{font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center;vertical-align:middle!important;}
-.clash-table tr:last-child td{border-bottom:none;}
-@media(max-width:720px){
-  .clash-table thead{display:none;}
-  .clash-table tr{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;border-bottom:1px solid rgba(200,148,58,.1);padding:.5rem 0;}
-  .clash-table tr:last-child{border-bottom:none;}
-  .td-dim{grid-column:1/-1;text-align:left;padding:.6rem 1rem .2rem;background:transparent;}
-  .td-ris,.td-leg{padding:.4rem 1rem .8rem;}
-}
 
 /* KEYFRAMES */
 @keyframes riseIn{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
@@ -198,6 +178,7 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
     <li><a href="#fonti">Due voci</a></li>
     <li><a href="#cultura">Arte</a></li>
     <li><a href="#due-voci">Il mito</a></li>
+    <li><a href="#bibliografia">Bibliografia</a></li>
   </ul>
 </nav>
 
@@ -269,7 +250,7 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
       <div class="caric-meta">
         <span class="caric-source">Il Fischietto, Torino · 1 gennaio 1861</span>
         <p class="caric-title">«Sic itur ad astra!»</p>
-        <p class="caric-desc">Illustrazione del settimanale satirico torinese. L'Italia — figura femminile maestosa — ascende verso il cielo portata da angeli (tra cui si riconoscono i volti di Cavour e Garibaldi), mentre in basso i rappresentanti del vecchio regime borbonico e clericale restano a terra, ridicolizzati e sconfitti. La didascalia latina — <em>«così si va alle stelle»</em> — è un omaggio a Virgilio e una dichiarazione di trionfo risorgimentale.</p>
+        <p class="caric-desc">L'Italia ascende verso il cielo portata da angeli — tra cui si riconoscono Cavour e Garibaldi — mentre il vecchio regime borbonico resta a terra, sconfitto e ridicolizzato. La didascalia latina <em>«così si va alle stelle»</em> è una dichiarazione di trionfo risorgimentale.</p>
         <span class="caric-tag">Stampa satirica</span>
       </div>
     </div>
@@ -282,7 +263,7 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
       <div class="caric-meta">
         <span class="caric-source">Melchiorre De Filippis Delfico · Litografia Richter, Napoli · 1861</span>
         <p class="caric-title">«Guarda, a D. Bartolo sembra una statua…»</p>
-        <p class="caric-desc">Una raffinata allegoria politica che prende in prestito l'opera lirica di Rossini per mettere in scena il trionfo risorgimentale. Al centro, il generale piemontese Enrico Cialdini (nei panni del Conte d'Almaviva) tiene sottobraccio l'Italia turrita (Rosina), guidati dall'imperatore francese Napoleone III nel ruolo del sagace Figaro. Il trio irride l'Austria (un pietrificato Don Bartolo), che assiste impotente allo stralcio dei vecchi patti della Restaurazione del 1815. Alle sue spalle, nel ruolo comico dello "Svegliato" — il servitore storicamente narcotizzato per non intralciare la trama — troviamo Francesco II di Borbone. La satira lo fotografa così: un re che si è destato troppo tardi, quando la storia aveva già unito l'Italia.</p>
+        <p class="caric-desc">Cialdini (nei panni del Conte d'Almaviva) tiene sottobraccio l'Italia turrita guidato da Napoleone III nel ruolo di Figaro, mentre l'Austria assiste impotente al crollo della Restaurazione. Francesco II è lo «Svegliato» della commedia — il servitore narcotizzato: un re che si è destato troppo tardi.</p>
         <span class="caric-tag">Caduta del regime</span>
       </div>
     </div>
@@ -295,7 +276,7 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
       <div class="caric-meta">
         <span class="caric-source">Adolfo Matarelli · Il Lampione · 1861–1862 ca.</span>
         <p class="caric-title">«Il Regno d'Italia e la sua nutrice»</p>
-        <p class="caric-desc">L'immagine critica aspramente la politica estera italiana, mostrando l'Italia turrita mentre aggredisce il capo del governo Urbano Rattazzi per aver affidato il neonato Stato unitario alla "balia" francese, Napoleone III. Sul lato destro della scena si muovono, ridotti a bambini piccoli e piagnucolosi, i sovrani italiani spodestati che cercano la protezione della Francia e del Papa; tra questi spicca Francesco II di Borbone, raffigurato come un fanciullo gracile, impotente e malinconico, ritratto accanto ai simboli del "Dispotismo" ormai crollato, a testimonianza del definitivo tramonto politico del suo regime dopo l'impresa dei Mille.</p>
+        <p class="caric-desc">L'Italia aggredisce il governo per aver affidato lo Stato a Napoleone III. Tra i sovrani spodestati ridotti a bambini piagnucolosi spicca Francesco II: gracile, impotente, malinconico — simbolo del definitivo tramonto borbonico.</p>
       </div>
     </div>
 
@@ -344,37 +325,6 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
 
   </div><!-- /card-grid -->
 
-  <!-- CLASH TABLE -->
-  <div class="clash-wrap reveal">
-    <span class="clash-kicker">Confronto diretto · Le stesse domande, risposte opposte</span>
-    <table class="clash-table">
-      <thead>
-        <tr>
-          <th class="th-ris">Dumas · Risorgimentale</th>
-          <th class="th-dim">Dimensione</th>
-          <th class="th-leg">De' Sivo · Legittimista</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="td-ris">«Debole, falso, insicuro e pauroso sino alla vigliaccheria» — un tiranno che fingeva amore per il popolo mentre lo opprimeva</td>
-          <td class="td-dim">Carattere</td>
-          <td class="td-leg">«Proclive a studiare, aneloso di correggere» — un sovrano virtuoso e pio, ingenuo più che malvagio</td>
-        </tr>
-        <tr>
-          <td class="td-ris">Incompetenza intrinseca e sistema tirannico: la fine era scritta nel regime borbonico stesso, non nella contingenza</td>
-          <td class="td-dim">Causa della caduta</td>
-          <td class="td-leg">Tradimento dei ministri e ingenuità: un giovane «non credente alla molta malvagità» consegnato dai propri consiglieri ai nemici</td>
-        </tr>
-        <tr>
-          <td class="td-ris">«Un'ombra» — nessun atto redime la sua storia; la sconfitta è giusta punizione</td>
-          <td class="td-dim">Giudizio finale</td>
-          <td class="td-leg">Soldato eroico a Gaeta: «si ricordava d'essere il primo soldato della nazione» — martire politico, non colpevole</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
   <!-- SYNTHESIS NOTE -->
   <div class="voices-note reveal" style="max-width:1040px;margin:2rem auto 0;">
     <p><strong>Una sola persona, due storie incompatibili.</strong> Nel gennaio 1861, mentre l'assedio di Gaeta era ancora in corso, erano già in campo le due narrative che si contendono Francesco II ancora oggi. Non è un problema di fonti: è un problema di sguardo. I fatti erano gli stessi. Le conclusioni, opposte.</p>
@@ -401,7 +351,7 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
       <span class="caric-source">Gabriele D'Annunzio · 1895–96</span>
       <p class="caric-title lg" style="margin-top:.5rem;">Le vergini delle rocce</p>
       <p class="caric-quote light">"In verità, egli aveva tutto: la forza imperiosa dell'antico nome, la giovinezza che seduce e trascina, un reame su tre mari bellissimo e assuefatto alle tirannie,"</p>
-      <p class="caric-desc" style="margin-top:.8rem;">In <em>Le vergini delle rocce</em>, D'Annunzio non è interessato alla storia: è interessato all'estetica. Il re viene descritto come un «pusillanime» incapace di elevarsi agli eventi. Il punto è il contrasto tra la scena perfetta — l'assedio di Gaeta, il mare, la tragedia storica — e il protagonista sbagliato: la Fortuna gli ha concesso ogni elemento della grandezza «fuor che la natura del leone». La debolezza, per D'Annunzio, è uno spreco di sublime.</p>
+      <p class="caric-desc" style="margin-top:.8rem;">D'Annunzio non è interessato alla storia: è interessato all'estetica. Il contrasto è tra la scena perfetta — Gaeta, il mare, la tragedia storica — e il protagonista sbagliato: la Fortuna gli ha concesso ogni elemento della grandezza «fuor che la natura del leone».</p>
       <div class="caric-tags">
         <span class="caric-tag">Letteratura</span>
         <span class="caric-tag">Estetismo</span>
@@ -418,7 +368,7 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
         <img src="https://upload.wikimedia.org/wikipedia/it/a/a8/%27o_Re.jpg?_=20130119140100" alt="Locandina del film O Re">
       </div>
       <p class="caric-quote light">Io invece non è il regno che rimpiango... è Napoli!</p>
-      <p class="caric-desc" style="margin-top:.8rem;">In <em>'O Re</em>, Magni costruisce un Francesco II (Giancarlo Giannini) altrettanto incapace di agire — esiliato a Roma, tormentato dai sensi di colpa, capace solo di nostalgia. Le parole potrebbero essere quelle di D'Annunzio. Ma il gesto estetico è opposto: quella stessa indolenza diventa umanità, malinconia, persino poesia. Il re che preferisce Napoli al regno non è condannato per la sua debolezza — è amato per questo. In Magni non è uno spreco: è l'unica grazia rimasta a chi ha perso tutto.</p>
+      <p class="caric-desc" style="margin-top:.8rem;">Magni costruisce un Francesco II (Giancarlo Giannini) esiliato a Roma, tormentato dai sensi di colpa, capace solo di nostalgia. Ma il gesto estetico è opposto: quella stessa indolenza diventa umanità, malinconia, poesia. Non è uno spreco — è l'unica grazia rimasta a chi ha perso tutto.</p>
       <div class="caric-tags">
         <span class="caric-tag">Cinema</span>
         <span class="caric-tag">Crepuscolarismo</span>
@@ -450,36 +400,15 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
   <div class="tiktok-header">
     <span class="kicker reveal">Analisi · Strategie narrative</span>
     <h2 class="heading reveal d1" style="font-size:clamp(1.3rem,3vw,2rem);">Come si costruisce un mito sul social</h2>
+    <div class="body reveal d2" style="margin-top:1.2rem;">
+      <p>Due video di canali neoborbonici — <a href="https://vm.tiktok.com/ZNRnNBJSR/" target="_blank" rel="noopener" style="color:var(--gold);">HistoriaPlay</a> e <a href="https://vm.tiktok.com/ZNRnNLkLL/" target="_blank" rel="noopener" style="color:var(--gold);">CuriosityHubItalia</a> — stesso soggetto, stessa disfatta, strategie narrative quasi identiche:</p>
+      <ul style="margin-top:1rem;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:.7rem;">
+        <li style="display:grid;grid-template-columns:auto 1fr;gap:.8rem;font-size:.88rem;line-height:1.6;"><span style="font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;padding-top:.2rem;">Martirio</span><span style="color:var(--text);">Francesco II come figura morale esemplare: rifiuto della proposta di spartizione del 1859, 102 giorni di resistenza a Gaeta «abbandonato dalle potenze europee».</span></li>
+        <li style="display:grid;grid-template-columns:auto 1fr;gap:.8rem;font-size:.88rem;line-height:1.6;"><span style="font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;padding-top:.2rem;">Revisionismo</span><span style="color:var(--text);">L'Unità come aggressione subita, non liberazione. Documenti «inediti» a sostegno: colpa piemontese, innocenza borbonica.</span></li>
+        <li style="display:grid;grid-template-columns:auto 1fr;gap:.8rem;font-size:.88rem;line-height:1.6;"><span style="font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;padding-top:.2rem;">Formato</span><span style="color:var(--text);">Aperture ad effetto, lettura drammatizzata di archivi, musiche epiche. Una memoria <em>affettiva</em>, non accademica.</span></li>
+      </ul>
+    </div>
   </div>
-
-  <div class="analysis-wrap">
-
-    <div class="analysis-block reveal">
-      <span class="analysis-label">Strategia 1 · Esaltazione e vittimizzazione</span>
-      <h3 class="analysis-title">Il re eroico abbandonato da tutti</h3>
-      <div class="analysis-body">
-        <p>I due video convergono su un ritratto preciso: Francesco II come figura morale esemplare, coraggiosa, leale fino all'ultimo. Si celebrano il suo rifiuto della proposta di spartizione del 1859 e i 102 giorni di resistenza a Gaeta, pur «abbandonato dalle potenze europee». La struttura è quella del martirio: un re giusto che paga con la sconfitta la propria integrità morale.</p>
-      </div>
-    </div>
-
-    <div class="analysis-block reveal d1">
-      <span class="analysis-label">Strategia 2 · Revisionismo del Risorgimento</span>
-      <h3 class="analysis-title">L'Unità come aggressione, non come liberazione</h3>
-      <div class="analysis-body">
-        <p>L'Unità d'Italia viene presentata come aggressione militare subita da un regno «ricco, con una marina potente e una cultura raffinata». Si citano documenti «inediti» che dimostrerebbero come Cavour abbia scelto la guerra solo dopo il rifiuto diplomatico di Francesco II — colpa piemontese, innocenza borbonica.</p>
-        <div class="analysis-quote">«grande Sud i briganti eroi hanno lottato contro l'invasione dei barbari piemontesi» — commento TikTok, Fonte 1</div>
-      </div>
-    </div>
-
-    <div class="analysis-block reveal d2">
-      <span class="analysis-label">Strategia 3 · Engagement algoritmico</span>
-      <h3 class="analysis-title">Tecniche di trattenimento dell'attenzione</h3>
-      <div class="analysis-body">
-        <p>I video usano tecniche tipiche della divulgazione social: aperture ad effetto («vi racconteranno la storia che non vi hanno mai detto»), lettura drammatizzata di documenti d'archivio, musiche epiche in sottofondo. Il risultato è una memoria <em>affettiva</em>, non accademica — che risponde a bisogni identitari reali con gli strumenti dell'intrattenimento.</p>
-      </div>
-    </div>
-
-  </div><!-- /analysis-wrap -->
 
   <!-- COMMENTI DAL PUBBLICO -->
   <div class="tiktok-header" style="margin-top:3rem;">
@@ -550,6 +479,80 @@ h2.heading{font-family:'Cinzel',serif;font-size:clamp(1.7rem,4vw,2.8rem);font-we
       </div>
       <span class="riflessione-portrait-caption">Ritratto ufficiale · 1860 ca.</span>
     </div>
+  </div>
+</section>
+
+<!-- BIBLIOGRAFIA -->
+<section class="section" id="bibliografia">
+  <span class="kicker reveal">Riferimenti</span>
+  <h2 class="heading reveal d1">Bibliografia e fonti</h2>
+  <div class="biblio-grid">
+
+    <div class="biblio-group reveal">
+      <p class="biblio-group-title">Fonti primarie scritte</p>
+      <div class="biblio-item">
+        <span class="biblio-author">Dumas, Alexandre</span>
+        <span class="biblio-title">«Risposta al re Francesco II»</span>
+        <span class="biblio-meta">L'Indipendente, Napoli, gennaio 1861</span>
+        <a class="biblio-link" href="https://www.nuovomonitorenapoletano.it/index.php?option=com_content&view=article&id=2959" target="_blank" rel="noopener">↗ Leggi online</a>
+      </div>
+      <div class="biblio-item">
+        <span class="biblio-author">De' Sivo, Giacinto</span>
+        <span class="biblio-title">Storia delle due Sicilie dal 1847 al 1861</span>
+        <span class="biblio-meta">Trieste, 1868</span>
+        <a class="biblio-link" href="https://www.eleaml.org/ne/margotti/1868-DE-SIVO-Storia-delle-due-Sicilie-dal-1847-al-1861-BB-2025.html#LIBRO_VIGESIMOSESTO" target="_blank" rel="noopener">↗ Leggi online</a>
+      </div>
+    </div>
+
+    <div class="biblio-group reveal d1">
+      <p class="biblio-group-title">Letteratura e cinema</p>
+      <div class="biblio-item">
+        <span class="biblio-author">D'Annunzio, Gabriele</span>
+        <span class="biblio-title">Le vergini delle rocce</span>
+        <span class="biblio-meta">Treves, Milano, 1896</span>
+      </div>
+      <div class="biblio-item">
+        <span class="biblio-author">Magni, Luigi (regia)</span>
+        <span class="biblio-title">'O Re</span>
+        <span class="biblio-meta">Dean Film, Italia, 1989</span>
+      </div>
+    </div>
+
+    <div class="biblio-group reveal">
+      <p class="biblio-group-title">Fonti iconografiche</p>
+      <div class="biblio-item">
+        <span class="biblio-author">Il Fischietto</span>
+        <span class="biblio-title">Caricature di Francesco II</span>
+        <span class="biblio-meta">Torino, 1861–1862 · Wikimedia Commons</span>
+      </div>
+      <div class="biblio-item">
+        <span class="biblio-author">De Filippis Delfico · Matarelli</span>
+        <span class="biblio-title">Caricature politiche borboniche</span>
+        <span class="biblio-meta">1861–1862 · Wikimedia Commons</span>
+      </div>
+      <div class="biblio-item">
+        <span class="biblio-author">Anonimo</span>
+        <span class="biblio-title">Ritratto ufficiale di Francesco II di Borbone</span>
+        <span class="biblio-meta">1860 ca. · Wikimedia Commons</span>
+      </div>
+    </div>
+
+    <div class="biblio-group reveal d1">
+      <p class="biblio-group-title">Fonti digitali</p>
+      <div class="biblio-item">
+        <span class="biblio-author">HistoriaPlay</span>
+        <span class="biblio-title">«Francesco II di Borbone, ultimo re delle Due Sicilie»</span>
+        <span class="biblio-meta">TikTok, 2024</span>
+        <a class="biblio-link" href="https://vm.tiktok.com/ZNRnNBJSR/" target="_blank" rel="noopener">↗ Guarda</a>
+      </div>
+      <div class="biblio-item">
+        <span class="biblio-author">CuriosityHubItalia</span>
+        <span class="biblio-title">«Spartizione — la proposta rifiutata da Francesco II»</span>
+        <span class="biblio-meta">TikTok, 2025</span>
+        <a class="biblio-link" href="https://vm.tiktok.com/ZNRnNLkLL/" target="_blank" rel="noopener">↗ Guarda</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
